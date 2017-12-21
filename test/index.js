@@ -125,7 +125,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -146,7 +146,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data  \u001b[32m200\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data  \u001b[32m200\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -168,7 +168,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"}  (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"}  (150ms)\n');
                     done();
                 });
             });
@@ -187,7 +187,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: post /data {"name":"adam"} 200 (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: post /data {"name":"adam"} 200 (150ms)\n');
                     done();
                 });
             });
@@ -211,7 +211,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal(`${date}, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n`);
+                    expect(out.data[0]).to.be.equal(`${date}, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n`);
                     done();
                 });
             });
@@ -233,7 +233,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;34mhead\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;34mhead\u001b[0m /data {"name":"adam"} \u001b[32m200\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -255,7 +255,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[31m599\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[31m599\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -277,7 +277,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[33m418\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[33m418\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -299,7 +299,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[36m304\u001b[0m (150ms)\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1458264811279:localhost:16014:ilx17kv4:10001) [response] http://localhost:61253: \u001b[1;33mpost\u001b[0m /data {"name":"adam"} \u001b[36m304\u001b[0m (150ms)\n');
                     done();
                 });
             });
@@ -345,7 +345,7 @@ describe('GoodConsole', () => {
                 reader.once('end', () => {
 
                     expect(out.data).to.have.length(1);
-                    expect(out.data[0]).to.be.equal('160318/013330.957, [error,user,info] message: Just a simple error, stack: Error: Just a simple Error\n');
+                    expect(out.data[0]).to.be.equal('160318/013330.957, (1419005623332:new-host.local:48767:i3vrb3z7:10000) [error,user,info] message: Just a simple error, stack: Error: Just a simple Error\n');
                     done();
                 });
             });
